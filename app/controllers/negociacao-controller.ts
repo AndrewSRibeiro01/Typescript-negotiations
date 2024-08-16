@@ -16,10 +16,12 @@ export class NegociacaoController {
     adiciona(): void {
         const negociacao = this.criaNegociacao();
         this.negociacoes.adiciona(negociacao);
+        negociacao.data.setDate(12);
         this.negociacoes.lista();
         console.log(this.negociacoes.lista());
         this.limparFormuladio();
     }
+    
     criaNegociacao(): Negociacao {
         const exp = /-/g;
         const date = new Date(this.inputData.value.replace(exp, ','));
