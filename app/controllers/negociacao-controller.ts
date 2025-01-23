@@ -13,9 +13,10 @@ export class NegociacaoController {
     private mensagemView = new MensagemView("#mensagemView");
 
     constructor() {
-        this.inputData = document.querySelector('#data');
-        this.inputQuantidade = document.querySelector('#quantidade');
-        this.inputValor = document.querySelector('#valor');
+        this.inputData = <HTMLInputElement>document.querySelector('#data');
+        this.inputQuantidade = <HTMLInputElement>document.querySelector('#quantidade');
+        this.inputValor = document.querySelector('#valor') as HTMLInputElement;
+        /* Posso tamber fazer o casting desta forma utilizando o as HTMLInputElement ao invés de <HTMLInputElement> */
         this.negociacoesView.update(this.negociacoes);
     }
 
