@@ -16,7 +16,7 @@ export class NegociacaoController {
         this.inputData = <HTMLInputElement>document.querySelector('#data');
         this.inputQuantidade = <HTMLInputElement>document.querySelector('#quantidade');
         this.inputValor = document.querySelector('#valor') as HTMLInputElement;
-        /* Posso tamber fazer o casting desta forma utilizando o as HTMLInputElement ao invés de <HTMLInputElement> */
+/* Posso tamber fazer o casting desta forma utilizando o as HTMLInputElement ao invés de <HTMLInputElement> */
         this.negociacoesView.update(this.negociacoes);
     }
 
