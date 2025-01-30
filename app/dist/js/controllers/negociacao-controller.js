@@ -41,6 +41,14 @@ export class NegociacaoController {
         this.negociacoesService
             .obterNegociacoesDoDia()
             .then(negociacoesDeHoje => {
+            return negociacoesDeHoje.filter(f => {
+                return !this.negociacoes
+                    .lista()
+                    .some(negociacao => negociacao
+                    .ehIgual(f));
+            });
+        })
+            .then(negociacoesDeHoje => {
             for (let negociacao of negociacoesDeHoje) {
                 this.negociacoes.adiciona(negociacao);
             }
@@ -82,3 +90,4 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], NegociacaoController.prototype, "adiciona", null);
+//# sourceMappingURL=negociacao-controller.js.map

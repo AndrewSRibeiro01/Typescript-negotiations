@@ -51,3 +51,4 @@ __decorate([
     __metadata("design:paramtypes", [Negociacoes]),
     __metadata("design:returntype", String)
 ], NegociacoesView.prototype, "template", null);
+//# sourceMappingURL=negociacoes-view.js.map
