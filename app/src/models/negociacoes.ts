@@ -1,7 +1,11 @@
 import { Negociacao } from "./negociacao.js";
 import { Modelo } from '../interface/modelo.js';
 
+<<<<<<< HEAD
 export class Negociacoes implements Modelo<Negociacoes> {
+=======
+export class Negociacoes implements Imprimivel {
+>>>>>>> de80e8b43868acd507d9a55cc60452e8ee69f216
     private negociacoes: Negociacao[] = [];
 
     public adiciona(negociacao: Negociacao) {

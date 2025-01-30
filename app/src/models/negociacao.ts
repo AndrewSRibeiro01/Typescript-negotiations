@@ -1,11 +1,19 @@
 import { Modelo } from "../interface/modelo.js";
 
+<<<<<<< HEAD
 export class Negociacao implements Modelo<Negociacao>{
+=======
+export class Negociacao implements Imprimivel {
+>>>>>>> de80e8b43868acd507d9a55cc60452e8ee69f216
     constructor(
         private _data: Date,
         public readonly quantidade: number,
         public readonly valor: number
+<<<<<<< HEAD
     ) { }
+=======
+    ) {}
+>>>>>>> de80e8b43868acd507d9a55cc60452e8ee69f216
 
     public static criaDe(dataString: string, quantidadeString: string, valorString: string): Negociacao {
         const exp = /-/g;
